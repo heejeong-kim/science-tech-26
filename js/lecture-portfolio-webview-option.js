@@ -3,6 +3,9 @@ const host=document.querySelector('#step-3-chapter-4')?.closest('.lecture-step3-
 if(!host||document.querySelector('.portfolio-webview-option'))return;
 const section=document.createElement('section');
 section.className='portfolio-webview-option';
+section.id='portfolio-webview-option';
+const divider=document.createElement('hr');
+divider.className='option-section-divider';
 section.innerHTML=`<details class="option-toggle"><summary><span class="option-badge">OPTION</span><strong>[옵션] 웹뷰로 포트폴리오 작업하기</strong><small>Google Slides 완성 후 선택 진행</small></summary><div class="option-toggle-body">
 <aside class="option-goal"><div class="goal-title"><span>🎯</span><strong>학습 목표</strong></div><p>실습 7 스토리보드를 그대로 활용해, 모션과 인터랙션이 들어간 웹뷰(Web View) 포트폴리오를 AI 도구로 만들고 링크로 공유할 수 있다.</p></aside>
 <p class="option-note">※ 선택 과정으로, Google Slides 포트폴리오(실습 9)를 완성한 뒤 진행함. 내용은 새로 쓰지 않고 실습 7 스토리보드(표 1·표 2)를 그대로 입력값으로 사용함</p>
@@ -49,6 +52,6 @@ ChatGPT: 아래 내용을 캔버스에서 미리보기 가능한 하나의 HTML 
 <aside class="lesson-warning option-warning"><div class="warning-title">🚨 <strong>웹뷰 포트폴리오 공개 전 확인</strong></div><ul><li>공유 링크는 주소를 아는 누구나 볼 수 있으므로, 기관명·개인정보·미공개 연구내용·과제번호가 치환된 상태인지 다시 확인함</li><li>모션은 흐름도·전후 비교처럼 내용을 이해시키는 곳에만 쓰고, 읽는 속도를 방해하면 줄임</li><li>숫자 애니메이션의 최종값이 원본 기록·스토리보드 수치와 같은지 확인함</li><li>AI가 코드로 그린 도형·차트에도 실험 결과로 오해될 만한 표현이 없는지 확인함</li><li>지원 기관이 요구하는 제출 형식(PDF 등)을 먼저 따르고, 웹뷰 링크는 추가 자료로 덧붙임</li></ul></aside>
 <h4 class="practice-title"><span>✍️</span> [옵션 실습] 웹뷰 포트폴리오 점검하기</h4><ul class="practice-checklist option-checklist"><li><label><input type="checkbox"> 섹션 6개가 스토리보드 순서·문장과 같음</label></li><li><label><input type="checkbox"> 3장 흐름도 클릭, 4장 숫자 애니메이션이 정상 작동하고 최종값이 스토리보드와 같음</label></li><li><label><input type="checkbox"> 모션이 한 번만 실행되고 내용을 가리지 않음</label></li><li><label><input type="checkbox"> 휴대폰에서 글자 넘침·겹침이 없음</label></li><li><label><input type="checkbox"> 실험 결과처럼 보이는 이미지·도형이 없음</label></li><li><label><input type="checkbox"> 이름·연락처를 직접 입력함</label></li><li><label><input type="checkbox"> 공유 링크를 만들고 <code>portfolio.html</code> 파일을 따로 보관함</label></li></ul>
 </div></details>`;
-host.append(section);
+host.append(divider,section);
 section.querySelector('.copy-prompt')?.addEventListener('click',async event=>{const button=event.currentTarget;const value=button.nextElementSibling?.innerText||'';try{await navigator.clipboard.writeText(value)}catch(error){const area=document.createElement('textarea');area.value=value;area.style.position='fixed';area.style.opacity='0';document.body.appendChild(area);area.select();document.execCommand('copy');area.remove()}button.textContent='복사됨';setTimeout(()=>button.textContent='복사',1200)});
 })();
