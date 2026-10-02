@@ -9,7 +9,7 @@ article.innerHTML=`
 
 <h3>3.1 6페이지 스토리보드 작성</h3>
 <div class="table-wrap"><table class="lesson-table portfolio-plan-table"><thead><tr><th>페이지</th><th>담을 내용</th><th>시각자료</th><th>김서연 예시</th></tr></thead><tbody>
-<tr><td><strong>1. 표지</strong></td><td>이름, 한 줄 정체성, 목표 직무</td><td>키워드 그래픽(선택: AI 배경 이미지)</td><td>효능평가 데이터를 표준화해 팀 연구를 이끄는 바이오 R&amp;D 연구자</td></tr>
+<tr><td><strong>1. 표지</strong></td><td>이름, 한 줄 정체성, 목표 직무</td><td>키워드 그래픽(선택: AI 배경 이미지)</td><td>효능평가 데이터를 표준화해 팀 연구 기준으로 확산한 바이오 R&amp;D 연구자</td></tr>
 <tr><td><strong>2. 자기소개·핵심역량</strong></td><td>경력 요약 3줄, 핵심역량 3~5개, 경력 타임라인</td><td>타임라인, 역량 칩</td><td>8년·3개사 타임라인(2018.09~현재) + 핵심역량 5개</td></tr>
 <tr><td><strong>3. 대표 프로젝트 ① 문제와 과정</strong></td><td>문제 정의 한 줄(Situation·Task) + Action과 단계별 판단 근거</td><td>단계별 흐름도</td><td>반복 실험 편차가 효능·기전 판단을 막던 문제를 조건·결과 구조화 → 편차 구간 분석 → 우선 통제 변수 결정 → SOP 작성·확정으로 해결</td></tr>
 <tr><td><strong>4. 대표 프로젝트 ② 결과</strong></td><td>Result의 증거·확산·인정</td><td>전후 비교 차트 + 지표 카드</td><td>CV 약 25% → 10% 이내, 팀원 4명·2개 과제·온보딩 확산, 2025.01 사내 수상</td></tr>
@@ -24,8 +24,8 @@ article.innerHTML=`
 너는 {목표 직무} 채용 담당자가 30초 안에 핵심을 파악할 수 있도록 포트폴리오를 구성하는 커리어 컨설턴트야.
 
 [입력]
-1) 최종 경력 기술서([보완 필요] 섹션 제외): {실습 5 최종 경력 기술서}
-2) 보완한 STAR: {실습 6 최종 STAR}
+1) 최종 경력 기술서([보완 필요] 섹션 제외): {실습 6 최종 경력 기술서}
+2) 보완한 STAR: {실습 5 최종 STAR}
 
 [6페이지 구성안]
 1. 표지 — 이름, 한 줄 정체성, 목표 직무
@@ -67,8 +67,11 @@ article.innerHTML=`
 <details class="lesson-toggle nested-toggle"><summary>스토리보드 결과</summary><div class="toggle-body" id="seoyeon-story-result"></div></details>
 </div></details>
 
-<h3>3.2 시각자료 원칙</h3>
-<p>시각자료는 따로 만들지 않고 단계별로 나눠 넣는 것으로 무엇을 그릴지(종류·요소·강조)는 실습 7 스토리보드의 '시각자료 설계' 열에서 정하고, 어떻게 그릴지(색·스타일·금지 규칙)는 실습 8 Canvas 프롬프트에 넣어 슬라이드를 만들 때 함께 그림. 표지 배경·아이콘처럼 글자가 없는 이미지만 실습 9에서 나노 바나나로 만들어 넣음</p>
+<h3>3.2 시각화 3종과 원칙</h3>
+<p>포트폴리오의 시각자료는 꾸미기가 아니라 근거를 보여 주는 장치임. 채용 담당자가 확인하는 것은 '이 사람의 판단과 성과를 믿을 수 있는가'이므로, 시각자료를 역할에 따라 3종으로 나눠 만듦</p>
+<p>무엇을 그릴지는 실습 7 스토리보드의 '시각자료 설계' 열에서 정하고, 실습 8 Canvas로 초안을 만든 뒤, 실습 9에서 Slides로 완성함</p>
+<div class="table-wrap"><table class="lesson-table"><thead><tr><th>종류</th><th>들어가는 곳</th><th>보여 주는 것</th><th>만드는 도구</th><th>원칙</th></tr></thead><tbody><tr><td><strong>① 데이터 차트</strong></td><td>4장 대표 프로젝트 ② 결과</td><td>전후 비교로 보는 성과의 증거</td><td>Google Sheets → Slides 연결 차트</td><td>내 기록의 수치만 쓰고, 비교 기준(기간·자료)을 표시함</td></tr><tr><td><strong>② 판단 흐름도</strong></td><td>3장 대표 프로젝트 ① 문제와 과정</td><td>단계별로 내가 무엇을 왜 판단했는지</td><td>Canvas 초안 → Slides 도형 (선택: Napkin AI)</td><td>단계명·판단 근거는 실습 7 표 2와 같게, 강조는 1곳만 둠</td></tr><tr><td><strong>③ 브랜딩 이미지 (선택)</strong></td><td>표지 배경·아이콘</td><td>첫인상과 페이지 통일감</td><td>나노 바나나 2</td><td>글자·숫자 없이, 메인 컬러·선 스타일을 통일함</td></tr></tbody></table></div>
+<section class="lesson-insight"><h4 class="insight-title"><span>🧠</span><strong>우선순위는 차트와 흐름도</strong><span>🧠</span></h4><p>평가를 좌우하는 것은 ① 데이터 차트와 ② 판단 흐름도이며, ③ 브랜딩 이미지는 두 가지를 완성한 뒤 선택으로 더함</p></section>
 <aside class="lesson-warning"><div class="warning-title">🚨 <strong>과학기술 포트폴리오의 AI 이미지 사용 원칙</strong></div><ul><li>AI 이미지는 표지·개념도·아이콘·배경 용도로만 사용</li><li>Western blot 밴드, 현미경 사진, 실험 그래프처럼 실험 결과로 오해될 수 있는 이미지는 생성하지 않음</li><li>수치가 들어가는 차트는 내 기록의 수치로 직접 만들고 비교 기준(기간·자료)을 함께 표시하며, 공개할 수 없는 데이터는 수치 없는 도식으로 표현</li><li>연구 데이터를 AI로 만들거나 보정한 것으로 보이면 연구윤리 문제로 이어질 수 있음</li></ul></aside>
 <details class="lesson-toggle"><summary>☑️ [안내] 도구 Imagen → 나노 바나나 2(Nano Banana 2) 안내</summary><div class="toggle-body"><p>교육 안내문의 'Imagen'은 Google의 이전 이미지 생성 모델 이름으로, 현재 Gemini 앱의 이미지 생성은 나노 바나나 2(Nano Banana 2)가 기본 모델임. 오늘 실습은 Gemini 앱의 이미지 생성 기능으로 진행함</p><p class="lesson-note">※ 무료 계정은 하루 이미지 생성 횟수에 제한이 있으므로 표지 배경 1장과 아이콘 세트 1장만 만듦. 메뉴 이름과 제공 범위는 계정·업데이트 시점에 따라 달라질 수 있음</p></div></details>
 <section class="lesson-insight"><h4 class="insight-title"><span>🧠</span><strong>이미지 속 글자는 넣지 않기</strong><span>🧠</span></h4><p>이미지 속 글자는 나중에 고치기 어렵고 오타 검수 부담이 있으므로, 이미지에는 글자를 넣지 않고 텍스트는 Slides에서 직접 입력함</p></section>
@@ -106,11 +109,60 @@ Google Slides로 내보내서 편집할 거야.
 <p class="lesson-note">※ 한 번에 하나씩 요청하고, 고칠 장과 요소를 지정해야 다른 장이 함께 바뀌지 않음</p>
 <details class="lesson-toggle sample-toggle"><summary>[실습 참고 🧍🏽‍♀️] 김서연의 슬라이드 초안</summary><div class="toggle-body"><details class="lesson-toggle nested-toggle"><summary>슬라이드 요청 프롬프트</summary><div class="toggle-body"><div class="prompt-block"><button type="button" class="copy-prompt">복사</button><pre id="seoyeon-slide-prompt"></pre></div></div></details><details class="lesson-toggle nested-toggle"><summary>슬라이드 초안 결과</summary><div class="toggle-body"><div class="lesson-file-card"><span>구글 슬라이드</span></div><a class="lesson-file-card" href="data/Bio_RD_Career_Portfolio.pdf" target="_blank" rel="noopener"><strong>Bio_RD_Career_Portfolio.pdf</strong><small>1.1 MiB · 새 창에서 보기</small></a><a class="lesson-file-card" href="data/Bio_RD_Career_Portfolio.pptx" download><strong>Bio_RD_Career_Portfolio.pptx</strong><small>89.1 KiB · 다운로드</small></a></div></details></div></details>
 
-<h3>3.4 Google Slides에서 완성하기</h3>
-<p>Canvas 초안은 출발점이며, 사실 확인과 이미지 정리를 거쳐야 제출할 수 있는 포트폴리오가 됨</p>
-<div class="table-wrap"><table class="lesson-table"><thead><tr><th>순서</th><th>할 일</th><th>확인 기준</th></tr></thead><tbody><tr><td>1. 사실 확인</td><td>장마다 문장·수치를 스토리보드와 대조함</td><td>스토리보드에 없는 경력·수치·역할 표현이 없음</td></tr><tr><td>2. 이미지 정리</td><td>Canvas가 자동으로 넣은 이미지를 점검함</td><td>실험 결과처럼 보이는 이미지가 없음</td></tr><tr><td>3. 시각자료 정리</td><td>3장 흐름도·4장 차트의 글자와 수치를 맞춤</td><td>흐름도 단계명이 표 2와 같고, 차트 아래에 비교 기준이 있음</td></tr><tr><td>4. 이미지 넣기</td><td>나노 바나나로 만든 표지 배경·아이콘을 넣음</td><td>이미지 안에 글자·숫자가 없음</td></tr><tr><td>5. 직접 입력·공유</td><td>이름·연락처를 입력하고 PDF로 저장하거나 링크로 공유함</td><td>공유 권한을 '링크가 있는 모든 사용자 보기'로 설정함</td></tr></tbody></table></div>
-<h4 class="practice-title"><span>✍️</span> [실습 9] Google Slides로 포트폴리오 완성하기</h4>
-<ul class="practice-checklist"><li><label><input type="checkbox"> 장마다 스토리보드와 대조해 없는 내용을 지움</label></li><li><label><input type="checkbox"> 실험 결과처럼 보이는 이미지를 지움</label></li><li><label><input type="checkbox"> 3장 흐름도 단계명과 판단 근거를 표 2와 맞춤</label></li><li><label><input type="checkbox"> 4장 수치 아래에 비교 기준(기간·자료)을 표시함</label></li><li><label><input type="checkbox"> 나노 바나나로 표지 배경 1장·아이콘 세트 1장을 만들어 넣음</label></li><li><label><input type="checkbox"> 이름·연락처를 직접 입력함</label></li><li><label><input type="checkbox"> PDF로 저장하거나 공유 링크를 만듦</label></li></ul>`;
+<h3>3.4 Slides에서 시각화 3종 완성하기</h3>
+<p>Canvas 초안은 출발점이며, 사실 확인 뒤 시각화 3종을 완성해야 제출할 수 있는 포트폴리오가 됨. 틀린 문장을 시각화하지 않도록 사실 확인을 가장 먼저 하고, 차트는 Canvas가 그린 것을 쓰지 않고 내 수치로 다시 만듦</p>
+<div class="table-wrap"><table class="lesson-table"><thead><tr><th>순서</th><th>할 일</th><th>확인 기준</th></tr></thead><tbody><tr><td>1. 사실 확인</td><td>장마다 문장·수치를 스토리보드와 대조하고, Canvas가 자동으로 넣은 이미지를 점검함</td><td>스토리보드에 없는 내용과 실험 결과처럼 보이는 이미지가 없음</td></tr><tr><td>2. ① 데이터 차트 (4장)</td><td>Canvas 차트를 지우고 Sheets 연결 차트로 바꿈</td><td>차트 수치가 내 기록(Sheets)과 같고, 아래에 비교 기준이 있음</td></tr><tr><td>3. ② 판단 흐름도 (3장)</td><td>Canvas 흐름도를 Slides 도형으로 다듬음</td><td>단계명·판단 근거가 표 2와 같고, 강조는 1곳만 있음</td></tr><tr><td>4. ③ 브랜딩 이미지 (선택)</td><td>나노 바나나로 표지 배경·아이콘 세트를 만들어 넣음</td><td>이미지 안에 글자·숫자가 없고, 메인 컬러가 슬라이드와 같음</td></tr><tr><td>5. 직접 입력·공유</td><td>이름·연락처를 입력하고 PDF로 저장하거나 링크로 공유함</td><td>공유 권한을 '링크가 있는 모든 사용자 보기'로 설정함</td></tr></tbody></table></div>
+
+<h4>① 데이터 차트 만들기 (4장)</h4>
+<ol><li><strong>Canvas 차트 지우기</strong> — 4장에서 Canvas가 그린 차트·수치 이미지를 지움</li><li><strong>차트 삽입</strong> — 메뉴 삽입 → 차트 → 막대를 고르면 Sheets와 연결된 기본 차트가 생김</li><li><strong>내 수치 입력</strong> — 차트 오른쪽 위 메뉴의 '소스 열기'로 Sheets를 열고, 예시 데이터를 지운 뒤 내 기록의 전후 수치를 입력함</li><li><strong>반영하기</strong> — Slides로 돌아와 차트의 '업데이트'를 눌러 수치를 반영함</li><li><strong>다듬기</strong> — 차트 아래에 비교 기준(기간·자료)을 작은 글씨로 넣고, 강조할 막대 1개만 민트로 바꿈</li></ol>
+<p class="lesson-note">※ 이미 만든 Sheets 차트는 삽입 → 차트 → 스프레드시트에서로 가져와도 됨. 공개할 수 없는 수치는 차트 대신 '감소' 화살표처럼 수치 없는 도식으로 표현함</p>
+<details class="lesson-toggle sample-toggle"><summary>[실습 참고 🧍🏽‍♀️] 김서연의 Sheets 입력 예시</summary><div class="toggle-body"><div class="table-wrap"><table class="lesson-table"><thead><tr><th>구분</th><th>반복 실험 간 CV(%)</th><th>막대 라벨</th></tr></thead><tbody><tr><td>표준화 전 3개월</td><td>25</td><td>약 25%</td></tr><tr><td>표준화 후 3개월</td><td>10</td><td>10% 이내</td></tr></tbody></table></div><ul><li><strong>비교 기준 (차트 아래)</strong> : 표준화 전·후 각 3개월 실험노트·데이터 리뷰 자료 비교</li><li><strong>강조</strong> : 표준화 후 막대만 민트</li><li>'약'·'이내'처럼 범위로 기록된 수치는 막대 라벨에 그 표현을 그대로 달고, 정확한 값처럼 보이는 소수점은 붙이지 않음</li></ul><p class="lesson-note">※ 수치는 수업용 가상 예시이며, 실제 포트폴리오에는 기록으로 확인된 수치만 사용함</p></div></details>
+
+<h4>② 판단 흐름도 다듬기 (3장)</h4>
+<ol><li><strong>단계명 대조</strong> — Canvas가 만든 흐름도의 단계명·순서를 실습 7 표 2와 대조함</li><li><strong>도형 정리</strong> — 어긋나거나 깨진 도형은 삽입 → 도형, 삽입 → 선(화살표)으로 다시 그림. 4단계라면 같은 크기 사각형 4개와 화살표 3개로 구성함</li><li><strong>판단 근거 넣기</strong> — 단계 아래에 판단 근거를 한 줄씩 작은 글씨로 넣음</li><li><strong>강조 1곳</strong> — 내 판단이 가장 잘 드러나는 단계 하나만 민트로 칠함 (김서연: STEP 3 우선 통제 변수 결정)</li><li><strong>고정하기</strong> — 도형과 글상자를 모두 선택해 그룹으로 묶어 정렬이 흐트러지지 않게 함</li></ol>
+<details class="lesson-toggle"><summary>☑️ [참고] 다른 도구 : Napkin AI (텍스트 → 도식)</summary><div class="toggle-body"><p>Napkin AI는 문장을 붙여넣으면 도식 후보를 만들어 주는 도구로, Slides 도형을 직접 그리기 어려울 때 활용할 수 있음</p><ol><li>표 2의 '단계 · 한 일 · 판단 근거'를 문장으로 붙여넣음</li><li>제안된 도식 중 단계가 순서대로 이어지는 형태를 고름</li><li>색을 네이비·민트로 맞추고 이미지로 내려받아 Slides 3장에 넣음</li></ol><p class="lesson-note">※ 도식 안 글자가 바뀌거나 깨지지 않았는지 표 2와 다시 대조함. 무료 플랜의 제공 범위와 메뉴는 업데이트에 따라 달라질 수 있음</p></div></details>
+
+<h4>③ 브랜딩 이미지 만들기 (선택)</h4>
+<p>나노 바나나는 표지 배경과 아이콘처럼 글자가 없는 이미지에만 씀. 두 이미지를 같은 대화창에서 이어서 만들어야 색과 선 스타일이 맞음</p>
+<p><strong>표지 배경 프롬프트</strong></p>
+<div class="prompt-block"><button type="button" class="copy-prompt">복사</button><pre>[역할]
+너는 과학기술 경력 포트폴리오의 표지 배경을 만드는 그래픽 디자이너야.
+
+[요청]
+16:9 가로형 표지 배경 이미지 1장을 만들어 줘.
+
+[주제]
+{내 분야 키워드 2~3개}
+
+[스타일]
+- 흰 배경에 메인 컬러 네이비, 강조 컬러 민트만 써 줘 (실습 8 슬라이드와 같은 색)
+- 얇은 선과 단순한 도형으로 표현한 추상 패턴으로 만들어 줘
+- 왼쪽 2/3은 제목을 넣을 수 있게 비워 둬
+
+[금지]
+- 글자·숫자·로고는 넣지 마
+- 현미경 사진, Western blot 밴드, 실험 그래프처럼 실험 결과로 보이는 요소는 넣지 마
+- 사람 얼굴은 넣지 마</pre></div>
+<p><strong>아이콘 세트 프롬프트 (같은 대화창에서 이어서)</strong></p>
+<div class="prompt-block"><button type="button" class="copy-prompt">복사</button><pre>[요청]
+앞에서 만든 표지와 같은 색·선 스타일로, 아래 키워드 6개를 아이콘 6개로 만들어 줘.
+한 장의 이미지에 3×2 격자로 배치해 줘.
+
+[키워드]
+{장별 키워드 6개}
+
+[스타일]
+- 모든 아이콘을 같은 선 두께의 라인 아이콘으로 통일해 줘
+- 네이비 선에 강조 포인트만 민트, 흰 배경으로 만들어 줘
+- 하나씩 잘라 쓸 수 있게 아이콘 사이 간격을 넉넉하게 둬
+
+[금지]
+- 글자·숫자는 넣지 마
+- 실험 결과처럼 보이는 그림은 넣지 마</pre></div>
+<details class="lesson-toggle sample-toggle"><summary>[실습 참고 🧍🏽‍♀️] 김서연의 키워드</summary><div class="toggle-body"><ul><li><strong>표지 주제</strong> : 세포 기반 실험, 데이터 분석, 표준화</li><li><strong>아이콘 6개</strong> : 실험, 데이터 분석, 표준화(SOP), 협업, 특허, 학회 발표</li><li><strong>쓰는 곳</strong> : 표지 배경은 1장, 아이콘은 2장 역량 칩과 6장 연구성과 열 제목 옆에 넣고, Slides의 이미지 자르기로 하나씩 잘라 씀</li></ul></div></details>
+
+<h4 class="practice-title"><span>✍️</span> [실습 9] Slides에서 시각화 3종 완성하기</h4>
+<ul class="practice-checklist"><li><label><input type="checkbox"> 장마다 스토리보드와 대조해 없는 내용을 지움</label></li><li><label><input type="checkbox"> 실험 결과처럼 보이는 이미지를 지움</label></li><li><label><input type="checkbox"> 4장 차트를 Sheets 연결 차트로 바꾸고, 수치를 내 기록과 맞춤</label></li><li><label><input type="checkbox"> 4장 차트 아래에 비교 기준(기간·자료)을 표시함</label></li><li><label><input type="checkbox"> 3장 흐름도 단계명과 판단 근거를 표 2와 맞추고, 강조는 1곳만 둠</label></li><li><label><input type="checkbox"> (선택) 나노 바나나로 표지 배경 1장·아이콘 세트 1장을 만들어 넣음</label></li><li><label><input type="checkbox"> 이름·연락처를 직접 입력함</label></li><li><label><input type="checkbox"> PDF로 저장하거나 공유 링크를 만듦</label></li></ul>`;
 previous.append(article);
 
 const googleSlidesCard=[...article.querySelectorAll('.lesson-file-card')].find(card=>card.textContent.trim()==='구글 슬라이드');
@@ -125,7 +177,7 @@ if(googleSlidesCard){
 }
 
 const storyRows=[
-['1. 표지','효능평가 데이터를 표준화해 팀 연구를 이끄는 바이오 R&amp;D 연구자','바이오 R&amp;D 8년의 실험·분석 경험을 기반으로 개인의 문제해결을 팀 연구 프로세스로 확장해 온 연구자','① 바이오 R&amp;D 8년 · 2018.09~현재 ② 생명공학 석사 · 2016.03~2018.08 ③ Target Position · 바이오·의료 R&amp;D 선임/책임급 연구직 · Project Leader / 이름·연락처: [직접 입력]','3단계 키워드 그래픽 / Experiment → Analysis → Standardization (화살표 연결) / Standardization 강조'],
+['1. 표지','효능평가 데이터를 표준화해 팀 연구 기준으로 확산한 바이오 R&amp;D 연구자','바이오 R&amp;D 8년의 실험·분석 경험을 기반으로 개인의 문제해결을 팀 연구 프로세스로 확장해 온 연구자','① 바이오 R&amp;D 8년 · 2018.09~현재 ② 생명공학 석사 · 2016.03~2018.08 ③ Target Position · 바이오·의료 R&amp;D 선임/책임급 연구직 · Project Leader 지원 / 이름·연락처: [직접 입력]','3단계 키워드 그래픽 / Experiment → Analysis → Standardization (화살표 연결) / Standardization 강조'],
 ['2. 자기소개·핵심역량','실험 수행에서 데이터 해석·연구 운영까지 확장한 8년','in vitro 실험 역량을 기반으로 데이터 해석, 원인 분석, SOP 표준화와 연구 프로젝트 운영까지 역할을 확장함','① in vitro 효능평가·바이오마커 분석 · Cell culture, qPCR, Western blot, ELISA, Flow cytometry 기반 실험 설계·분석 ② 원인 분석·SOP 표준화 · 조건별 데이터 비교 → 원인 후보 도출 → 개선 우선순위 판단 → 팀 공통 SOP 적용 ③ 경력 확장 · A사 연구원: 효능평가·재현성 개선 → B사 연구원→선임: 바이오마커 분석·외부 협업 → C사 선임: 데이터 리뷰·SOP 표준화·연구 프로젝트 운영','가로형 Career Timeline + 역량 칩 / 원 3개(2018.09 A사 · 실험·재현성 / 2020.09 B사 · 분석·협업 / 2023.09 C사 · 표준화·운영) + 핵심역량 칩 5개 / C사 강조'],
 ['3. 대표 프로젝트 ① 문제와 과정','반복 실험 편차가 효능·기전 판단을 막고 있었고, 데이터로 우선순위를 정해 해결함','연구원별 실험 차이로 생긴 팀 단위 편차를, 모든 변수를 동시에 바꾸지 않고 데이터 비교로 통제 순서를 정하고 비교 실험으로 SOP를 확정해 해결함','① 문제 · 연구원마다 실험 방식이 달라 반복 실험 결과의 편차가 팀 단위로 반복되고 후보물질 효능·기전 비교 판단이 지연됨 ② 판단 · 계대수별 데이터의 편차가 가장 크고 배양 단계에서 바로 바꿀 수 있어 세포 계대수를 먼저 통제함 ③ 합의 · 의견이 갈린 측정 시점은 두 조건으로 1회 비교 실험을 해 데이터를 근거로 SOP를 확정함','4단계 Decision Flow / 상단 문제 정의 한 줄 + 조건·결과 구조화 → 편차 구간 분석 → 우선 통제 변수 결정 → SOP 작성·확정, 단계 아래 판단 근거(표 2) / 3단계 강조'],
 ['4. 대표 프로젝트 ② 결과','CV 약 25% → 10% 이내, 개인의 개선을 팀 연구 기준으로 확장함','개선 효과를 전·후 데이터로 확인하고 표준 SOP를 팀원 4명·2개 과제와 신규 연구원 온보딩까지 확산함','① Evidence · 표준화 전 3개월과 후 3개월의 실험노트·데이터 리뷰 자료를 비교한 결과 반복 실험 간 CV가 약 25%에서 10% 이내로 감소하고 재실험 요청이 줄어듦 ② Scale · 표준 SOP를 팀원 4명·2개 과제에 적용하고 신규 연구원 온보딩 자료로 활용함 ③ Recognition · 해당 성과로 2025.01 사내 우수 연구 개선상을 수상함','Before → After 성과 대시보드 / CV 약 25% → 10% 이내(전·후 각 3개월 비교) + 지표 카드 4개(팀원 4명 · 2개 과제 · 온보딩 · 2025.01 수상) / CV 수치 강조'],
@@ -209,7 +261,7 @@ const storyPrompt=`[역할]
 - 연구 운영 / 실험계획 검토·데이터 리뷰 / 능숙 / C사 연구 프로젝트 운영
 - 협업 / 외부 시험기관 및 연구팀 협업 / 능숙 / 시험조건 협의, 결과보고서 검토
 
-2) 보완한 STAR (실습 6 최종본)
+2) 보완한 STAR (실습 5 최종본)
 - 대표 프로젝트: C사 실험 프로토콜 표준화 (2024.03~2024.12)
 - S: C사에서 연구원마다 실험 방식이 달라 반복 실험 결과의 편차가 팀 단위로 반복되었고, 이로 인해 후보물질 효능·기전 비교 판단이 지연됨. 배경: A사에서 비슷한 편차 문제의 원인을 직접 분석해 본 경험이 있음
 - T: 선임연구원으로서 팀 실험의 편차 원인을 규명하고, 팀 전체가 따르는 표준 프로토콜(SOP)을 만들어 적용해야 함

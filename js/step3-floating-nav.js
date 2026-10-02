@@ -3,7 +3,7 @@ if(document.querySelector('.step3-floating-nav'))return;
 const steps=[
   {number:'STEP 1',selector:'#step-1',label:'2026 과학기술 채용 JD 읽기',chapters:[]},
   {number:'STEP 2',selector:'#step-2',label:'STAR로 내 경력 구조화하기',chapters:[['1','#step-2-chapter-1','경력 기술서와 포트폴리오'],['2','#step-2-chapter-2','경력 Inventory와 핵심역량'],['3','#step-2-chapter-3','대표 프로젝트 STAR 구조화']]},
-  {number:'STEP 3',selector:'#step-3',label:'AI로 나만의 포트폴리오 만들기',chapters:[['1','#step-3-chapter-1','Gemini로 경력 기술서 초안 작성'],['2','#step-3-chapter-2','Gemini로 STAR 구체화'],['3','#step-3-chapter-3','포트폴리오 구성'],['4','#step-3-chapter-4','최종 점검']]}
+  {number:'STEP 3',selector:'#step-3',label:'AI로 나만의 포트폴리오 만들기',chapters:[['1','#step-3-chapter-1','Gemini로 STAR 구체화'],['2','#step-3-chapter-2','Gemini로 경력 기술서 초안 작성'],['3','#step-3-chapter-3','포트폴리오 구성'],['4','#step-3-chapter-4','최종 점검']]}
 ];
 if(steps.some(step=>!document.querySelector(step.selector)))return;
 

@@ -34,4 +34,12 @@ persona.innerHTML=`<summary><strong>☑️ [실습 참고🧍🏽‍♀️] 수�
 <p class="persona-closing">각 STEP의 수업용 가상 사례인 김서연을 따라가면서 하나의 경력이 어떻게 경력 기술서와 포트폴리오로 발전하는지 확인</p>
 </div>`;
 step1.querySelector('.lesson-goal').after(persona);
+const jdSample=[...step1.querySelectorAll('.sample-toggle')].find(toggle=>toggle.querySelector('summary')?.textContent.includes('김서연의 JD 분해 시트'));
+const jdRows=jdSample?.querySelectorAll('.lesson-table tr');
+if(jdRows?.length>=5){
+  jdRows[1].children[3].innerHTML='1차 후보물질 효능평가, 2차 바이오마커 분석(발현 데이터로 작용기전 가설 검토 참여), 3차 연구 프로젝트 운영·팀 실험 기준 확정·SOP 표준 확산<br><strong>Gap:</strong> MOA 연구의 의사결정과 연구 과제를 Project Leader로 직접 리딩한 경험은 부족함';
+  jdRows[2].children[1].textContent='in vitro, Western blot, TR-FRET, MOA, TPD, PROTAC, Cell-based assay, MGD';
+  jdRows[2].children[3].innerHTML='Cell culture, qPCR, Western blot, ELISA, Flow cytometry<br><strong>Gap:</strong> TR-FRET, TPD, PROTAC, MGD의 직접 수행 근거는 없음';
+  jdRows[3].children[3].innerHTML='3차 프로토콜 표준화로 효능·기전 판단에 쓰이는 팀 실험 데이터의 일관성 확보(1차 재현성 개선 경험 기반), 2차 발현 데이터로 작용기전 가설 검토 참여<br><strong>Gap:</strong> 기전 연구의 의사결정과 과제 전체를 직접 주도한 경험은 부족하며, 현재 근거는 운영·기준 확정·표준 확산 경험임';
+}
 })();

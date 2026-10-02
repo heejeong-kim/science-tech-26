@@ -30,7 +30,7 @@ article.innerHTML=`
 <tr><td><strong>성과 제시</strong></td><td>수치를 나열함</td><td>전후 비교 차트로 보여줌</td></tr>
 <tr><td><strong>읽는 방식</strong></td><td>꼼꼼히 읽는 문서</td><td>30초 안에 훑어보는 문서</td></tr>
 <tr><td><strong>채용 담당자의 질문</strong></td><td>“어떤 경력을 쌓아 왔는가?”</td><td>“문제를 어떻게 판단하고 해결하는가?”</td></tr>
-<tr><td><strong>오늘의 실습</strong></td><td>실습 5 (Gemini로 초안 작성)</td><td>실습 7·8 (스토리보드 → 포트폴리오)</td></tr>
+<tr><td><strong>오늘의 실습</strong></td><td>실습 6 (Gemini로 초안 작성)</td><td>실습 7·8 (스토리보드 → 포트폴리오)</td></tr>
 </tbody></table></div>
 
 <section class="lesson-insight"><h4 class="insight-title"><span aria-hidden="true">🧠</span><strong>경력 기술서는 넓게, 포트폴리오는 깊게</strong><span aria-hidden="true">🧠</span></h4><p>포트폴리오에 모든 경력을 담지 않아도 되며 전체 경력은 경력 기술서가 보여주고, 포트폴리오는 지원 직무와 가장 가까운 대표 프로젝트로 “이 사람은 이렇게 일한다”를 증명하는 것.</p><p>그래서 오늘은 대표 프로젝트 1건을 STAR로 깊게 구조화하고, 나머지 경력은 자기소개·역량 페이지에서 요약해 보여줌</p></section>
@@ -57,7 +57,7 @@ article.innerHTML=`
 <aside class="lesson-goal"><div class="goal-title"><span>🎯</span><strong>학습 목표</strong></div><div class="goal-body">내 경력을 Inventory로 정리하고, Inventory의 경험을 직접 묶어 근거가 있는 핵심역량 3~5개를 도출할 수 있다.</div></aside>
 
 <h3>2.1 경력 Inventory</h3>
-<p>경력 Inventory는 내가 해온 일을 한 표에 펼쳐 정리하는 단계로, 이후 핵심역량(실습 3)·대표 프로젝트 STAR(실습 4)·경력 기술서(실습 5)에 그대로 쓰이는 원재료임. 대표 프로젝트는 3장에서 JD를 기준으로 내가 직접 고르므로 지금은 평가 없이 작은 경험까지 모두 적음</p>
+<p>경력 Inventory는 내가 해온 일을 한 표에 펼쳐 정리하는 단계로, 이후 핵심역량(실습 3)·대표 프로젝트 STAR(실습 4)·경력 기술서(실습 6)에 그대로 쓰이는 원재료임. 대표 프로젝트는 3장에서 JD를 기준으로 내가 직접 고르므로 지금은 평가 없이 작은 경험까지 모두 적음</p>
 <ul><li>반복적으로 수행해 온 연구·업무는 무엇인가?</li><li>다른 사람보다 익숙하게 다루는 기술·장비·방법론은 무엇인가?</li><li>문제가 발생했을 때 직접 원인을 찾거나 개선한 경험이 있는가?</li><li>논문·보고서·발표·교육자료를 만든 경험이 있는가?</li><li>다른 부서·연구자·고객과 협업한 경험이 있는가?</li><li>일정관리, 프로젝트 운영, 후배교육 경험이 있는가?</li><li>이전 방식보다 더 효율적으로 바꾼 경험이 있는가?</li></ul>
 
 <h4 class="practice-title practice-2-title"><span>✍️</span> [실습 2] 내 경력 Inventory 작성하기</h4>
@@ -76,7 +76,7 @@ article.innerHTML=`
 <p><strong>Gemini 입력 전 점검</strong></p>
 <label class="lesson-check"><input type="checkbox">이름·연락처를 삭제함</label><label class="lesson-check"><input type="checkbox">기관·고객명을 치환함</label><label class="lesson-check"><input type="checkbox">미공개 연구내용을 일반화함</label><label class="lesson-check"><input type="checkbox">내부 수치를 일반화하거나 연습용 가상 수치로 전환함</label><label class="lesson-check"><input type="checkbox">과제번호·출원 전 기술을 삭제함</label><label class="lesson-check"><input type="checkbox">소속기관 보안·AI 이용 정책상 입력이 금지된 정보가 없는지 확인함</label><label class="lesson-check"><input type="checkbox">Gemini 앱의 활동 기록 저장 설정을 확인하고, 필요하면 임시 채팅으로 실습함</label>
 <p><strong>🧍🏽‍♀️ 김서연의 원문 → 치환어</strong></p>
-<div class="table-wrap"><table class="lesson-table"><thead><tr><th>원문(가상)</th><th>유형</th><th>치환 표현</th></tr></thead><tbody><tr><td>○○바이오의 후보물질 KSY-217 효능평가</td><td>기관·미공개 연구</td><td>바이오 벤처 A사의 후보물질 X 효능평가</td></tr><tr><td>CRO △△랩과 ELISA 시험조건 협의</td><td>기관·고객 정보</td><td>외부 시험기관과 ELISA 시험조건 협의</td></tr><tr><td>○○부 과제(과제번호 포함) 참여</td><td>과제·권리 정보</td><td>정부 R&amp;D 과제 참여</td></tr><tr><td>내부 데이터 기준 CV 수치</td><td>내부 수치</td><td>편차가 절반 이하로 감소</td></tr></tbody></table></div>
+<div class="table-wrap"><table class="lesson-table"><thead><tr><th>원문(가상)</th><th>유형</th><th>치환 표현</th></tr></thead><tbody><tr><td>○○바이오의 후보물질 KSY-217 효능평가</td><td>기관·미공개 연구</td><td>바이오 벤처 A사의 후보물질 X 효능평가</td></tr><tr><td>CRO △△랩과 ELISA 시험조건 협의</td><td>기관·고객 정보</td><td>외부 시험기관과 ELISA 시험조건 협의</td></tr><tr><td>○○부 과제(과제번호 포함) 참여</td><td>과제·권리 정보</td><td>정부 R&amp;D 과제 참여</td></tr><tr><td>내부 데이터 기준 CV 수치</td><td>내부 수치</td><td>연습용 가상 수치로 전환(예: CV 약 25% → 10% 이내)<br>※ 실제 문서에는 공개 가능한 확인 수치만 사용</td></tr></tbody></table></div>
 </div></details>
 
 <div class="table-wrap"><table class="lesson-table inventory-template"><thead><tr><th>[번호] 경험/프로젝트</th><th>기간</th><th>내가 한 일</th><th>기술·방법</th><th>해결한 문제</th><th>결과/성과</th></tr></thead><tbody>${'<tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>'.repeat(7)}</tbody></table></div>

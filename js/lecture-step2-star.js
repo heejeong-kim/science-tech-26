@@ -32,7 +32,7 @@ section.innerHTML=`
 <h4 class="practice-title"><span>✍️</span> [실습 4] 대표 프로젝트 STAR 작성하기</h4>
 <p>3.1 직무별 강조점을 참고해, 실습 3에서 여러 역량의 근거로 반복된 Inventory 행(경험) 안에서 JD 요구에 직접 대응하는 구체적인 프로젝트 1건을 골라 STAR로 구조화</p>
 <p>Inventory의 한 행은 회사·역할 단위라 여러 일이 섞여 있을 수 있으므로, 그중 문제·행동·결과가 하나로 이어지는 장면 하나만 골라 한 줄로 적었던 ‘내가 한 일’은 판단 근거가 드러나는 Action으로, ‘결과/성과’는 증거와 확산이 있는 Result로 확장하며, 다른 행에 적은 수상·발표처럼 같은 프로젝트에서 나온 성과는 Result에 함께 씀</p>
-<p class="lesson-note">※ 완성 문장이 아니어도 됨. 칸마다 키워드나 한두 줄이면 충분하며, 비어 있는 판단 근거와 증거는 실습 6 AI 인터뷰에서 채움</p>
+<p class="lesson-note">※ 완성 문장이 아니어도 됨. 칸마다 키워드나 한두 줄이면 충분하며, 비어 있는 판단 근거와 증거는 실습 5 AI 인터뷰에서 채움</p>
 <ol class="project-selection-list"><li><strong>대표 프로젝트/경험(기간 포함):</strong></li><li><strong>선정 이유(대응하는 JD 요구):</strong></li><li><strong>강조할 점(3.1 직무별 강조점 참고):</strong></li><li><strong>STAR 작성:</strong></li></ol>
 <div class="table-wrap"><table class="lesson-table star-template"><thead><tr><th>STAR</th><th>작성 질문</th><th>나의 내용</th></tr></thead><tbody>
 <tr><td><strong>Situation</strong></td><td>어떤 상황·문제가 있었는지<br>💡 문제 + 그 문제 때문에 무엇이 막혔는지(영향)까지 씀</td><td></td></tr>
@@ -42,7 +42,7 @@ section.innerHTML=`
 </tbody></table></div>
 
 <details class="lesson-toggle sample-toggle"><summary>[실습 참고 🧍🏽‍♀️] 김서연의 대표 프로젝트 STAR</summary><div class="toggle-body">
-<ol class="sample-project-meta"><li><strong>대표 프로젝트/경험</strong><br>Inventory [6] 3차 회사 연구 프로젝트 운영 중 실험 프로토콜 표준화 (2024.03~2024.12 / 배경: [3] 1차 회사 재현성 개선 경험 2019.09~2020.03)</li><li><strong>선정 이유</strong><br>목표 JD가 ‘경력 5년+, Project Leader’를 요구하므로 주니어 시절의 단일 개선보다 개인의 문제해결이 팀 표준으로 확산된 경험을 대표로 선정하며, 효능·기전 판단에 쓰이는 데이터의 신뢰성을 높인 경험이라 JD의 Problem(작용기전 규명)에도 직접 대응함<br>[6]은 실습 3에서 ‘표준화’와 ‘협업·운영’ 2개 역량의 근거로 반복된 행이며, 같은 표준화 역량의 근거인 [3] 1차 재현성 개선은 Situation 배경으로, [11] 사내 수상은 Result의 인정으로 연결함</li><li><strong>강조할 점</strong><br>연구직(선임·책임) 기준으로 원인 분석 방법과 실험 설계 판단, 그리고 개인의 개선을 팀 표준으로 확산한 과정</li><li><strong>STAR 작성</strong><br>※ STAR는 하나의 상황을 기준으로 쓰는 것이 원칙이므로 3차 회사 경험을 중심에 두고, 1차 경험은 Situation의 배경 한 줄로만 사용</li></ol>
+<ol class="sample-project-meta"><li><strong>대표 프로젝트/경험</strong><br>Inventory [6] 3차 회사 연구 프로젝트 운영 중 실험 프로토콜 표준화 (2024.03~2024.12 / 배경: [3] 1차 회사 재현성 개선 경험 2019.09~2020.03)</li><li><strong>선정 이유</strong><br>목표 JD가 ‘경력 5년+, Project Leader’를 요구하므로 주니어 시절의 단일 개선보다 개인의 문제해결이 팀 표준으로 확산된 경험을 대표로 선정함. 이 경험은 Project Leader로 과제 전체를 직접 리딩한 근거가 아니라, 연구 프로젝트 운영·팀 실험 기준 확정·SOP 표준 확산 역량의 근거이며, 효능·기전 판단에 쓰이는 데이터의 신뢰성을 높인 인접 경험으로 JD의 Problem(작용기전 규명)을 지원함<br>[6]은 실습 3에서 ‘표준화’와 ‘협업·운영’ 2개 역량의 근거로 반복된 행이며, 같은 표준화 역량의 근거인 [3] 1차 재현성 개선은 Situation 배경으로, [11] 사내 수상은 Result의 인정으로 연결함</li><li><strong>강조할 점</strong><br>연구직(선임·책임) 기준으로 원인 분석 방법과 실험 설계 판단, 그리고 직접 리딩으로 과장하지 않고 개인의 개선을 팀 표준으로 확산한 과정</li><li><strong>STAR 작성</strong><br>※ STAR는 하나의 상황을 기준으로 쓰는 것이 원칙이므로 3차 회사 경험을 중심에 두고, 1차 경험은 Situation의 배경 한 줄로만 사용</li></ol>
 <div class="table-wrap"><table class="lesson-table star-sample"><thead><tr><th>STAR</th><th>작성 질문</th><th>김서연의 내용</th></tr></thead><tbody>
 <tr><td><strong>Situation</strong></td><td>어떤 상황·문제가 있었는지<br>💡 문제 + 그 문제 때문에 무엇이 막혔는지(영향)까지 씀</td><td>3차 회사(선임연구원)에서 연구원마다 실험 방식이 달라 반복 실험 결과의 편차가 팀 단위로 반복되고, 후보물질 효능·기전 비교 판단이 지연됨<br>배경: 1차 회사에서 비슷한 편차 문제의 원인을 직접 분석해 본 경험이 있음</td></tr>
 <tr><td><strong>Task</strong></td><td>내 역할과 해결해야 할 과제는 무엇인지<br>💡 내 역할과 달성할 목표만 쓰고, 어떻게 했는지는 쓰지 않음</td><td>선임연구원으로서 팀 실험의 편차 원인을 규명하고, 팀 전체가 따르는 표준 프로토콜(SOP)을 만들어 적용해야 함</td></tr>
