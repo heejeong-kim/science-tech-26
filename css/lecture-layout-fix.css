@@ -1,0 +1,7 @@
+/* 교안 본문 폭 보정: 그리드 항목이 내용(표·코드)의 최소 폭만큼 늘어나 화면 밖으로 넘치던 문제 수정 */
+.lecture-step-shell{grid-template-columns:minmax(0,1fr)}
+.lecture-step-shell>*,.lesson-view{min-width:0;max-width:100%}
+.lesson-view .table-wrap{max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.lesson-view pre{max-width:100%;white-space:pre-wrap;overflow-wrap:anywhere}
+.lesson-view img,.lesson-view iframe,.lesson-view video{max-width:100%;height:auto}
+.lesson-view details,.lesson-view aside,.lesson-view blockquote,.lesson-view section{max-width:100%}

@@ -19,6 +19,7 @@ article.innerHTML=`
 
 <section class="lesson-insight"><h4 class="insight-title"><span>🧠</span><strong>대표 프로젝트 중심을 지키는 규칙</strong><span>🧠</span></h4><p>문제 → 과정 → 결과의 전체 이야기와 흐름도·차트는 대표 프로젝트(3·4페이지)에만 사용</p><p>5페이지는 대표 프로젝트를 받쳐 주는 요약으로, 대표 프로젝트와 같은 역량을 보여주거나 JD Gap을 보완하는 보조 프로젝트 2건만 카드로 넣고 흐름도·차트는 쓰지 않음</p><p>최소 구성은 표지 · 자기소개·핵심역량 · 대표 프로젝트(3·4페이지를 한 장으로) · 보유 기술·연구성과의 4페이지로, 먼저 완성한 뒤 5페이지를 더함</p></section>
 
+<h4 class="practice-title"><span>✍️</span> [실습 7] 6페이지 스토리보드 만들기</h4>
 <p><strong>포트폴리오 전환 프롬프트</strong></p>
 <div class="prompt-block"><button type="button" class="copy-prompt">복사</button><pre>[역할]
 너는 {목표 직무} 채용 담당자가 30초 안에 핵심을 파악할 수 있도록 포트폴리오를 구성하는 커리어 컨설턴트야.
@@ -58,8 +59,6 @@ article.innerHTML=`
 - 한 페이지에는 메시지를 하나만 담아 줘
 - 연락처 같은 개인정보는 넣지 말고, 직접 입력할 자리만 비워 둬
 - 시각자료에 들어갈 글자·수치도 입력에 있는 내용만 써 줘</pre></div>
-
-<h4 class="practice-title"><span>✍️</span> [실습 7] 6페이지 스토리보드 만들기</h4>
 <div class="table-wrap"><table class="lesson-table editable-practice-table"><thead><tr><th>페이지</th><th>제목</th><th>핵심 메시지 1문장</th><th>시각자료 설계(종류 / 요소 / 강조)</th></tr></thead><tbody><tr><td>1. 표지</td><td></td><td></td><td></td></tr><tr><td>2. 자기소개·핵심역량</td><td></td><td></td><td></td></tr><tr><td>3. 대표 프로젝트 ① 문제와 과정</td><td></td><td></td><td></td></tr><tr><td>4. 대표 프로젝트 ② 결과</td><td></td><td></td><td></td></tr><tr><td>5. 주요 프로젝트 요약</td><td></td><td></td><td></td></tr><tr><td>6. 보유 기술·연구성과</td><td></td><td></td><td></td></tr></tbody></table></div>
 
 <details class="lesson-toggle sample-toggle"><summary>[실습 참고 🧍🏽‍♀️] 김서연의 6페이지 스토리보드</summary><div class="toggle-body">
@@ -70,7 +69,7 @@ article.innerHTML=`
 <h3>3.2 시각화 3종과 원칙</h3>
 <p>포트폴리오의 시각자료는 꾸미기가 아니라 근거를 보여 주는 장치임. 채용 담당자가 확인하는 것은 '이 사람의 판단과 성과를 믿을 수 있는가'이므로, 시각자료를 역할에 따라 3종으로 나눠 만듦</p>
 <p>무엇을 그릴지는 실습 7 스토리보드의 '시각자료 설계' 열에서 정하고, 실습 8 Canvas로 초안을 만든 뒤, 실습 9에서 Slides로 완성함</p>
-<div class="table-wrap"><table class="lesson-table"><thead><tr><th>종류</th><th>들어가는 곳</th><th>보여 주는 것</th><th>만드는 도구</th><th>원칙</th></tr></thead><tbody><tr><td><strong>① 데이터 차트</strong></td><td>4장 대표 프로젝트 ② 결과</td><td>전후 비교로 보는 성과의 증거</td><td>Google Sheets → Slides 연결 차트</td><td>내 기록의 수치만 쓰고, 비교 기준(기간·자료)을 표시함</td></tr><tr><td><strong>② 판단 흐름도</strong></td><td>3장 대표 프로젝트 ① 문제와 과정</td><td>단계별로 내가 무엇을 왜 판단했는지</td><td>Canvas 초안 → Slides 도형 (선택: Napkin AI)</td><td>단계명·판단 근거는 실습 7 표 2와 같게, 강조는 1곳만 둠</td></tr><tr><td><strong>③ 브랜딩 이미지 (선택)</strong></td><td>표지 배경·아이콘</td><td>첫인상과 페이지 통일감</td><td>나노 바나나 2</td><td>글자·숫자 없이, 메인 컬러·선 스타일을 통일함</td></tr></tbody></table></div>
+<div class="table-wrap"><table class="lesson-table"><thead><tr><th>종류</th><th>들어가는 곳</th><th>보여 주는 것</th><th>만드는 도구</th><th>원칙</th></tr></thead><tbody><tr><td><strong>① 데이터 차트</strong></td><td>4장 대표 프로젝트 ② 결과</td><td>전후 비교로 보는 성과의 증거</td><td>Google Sheets → Slides 연결 차트</td><td>내 기록의 수치만 쓰고, 비교 기준(기간·자료)을 표시함</td></tr><tr><td><strong>② 판단 흐름도</strong></td><td>3장 대표 프로젝트 ① 문제와 과정</td><td>단계별로 내가 무엇을 왜 판단했는지</td><td>Canvas 초안 → Slides 도형</td><td>단계명·판단 근거는 실습 7 표 2와 같게, 강조는 1곳만 둠</td></tr><tr><td><strong>③ 브랜딩 이미지 (선택)</strong></td><td>표지 배경·아이콘</td><td>첫인상과 페이지 통일감</td><td>나노 바나나 2</td><td>글자·숫자 없이, 메인 컬러·선 스타일을 통일함</td></tr></tbody></table></div>
 <section class="lesson-insight"><h4 class="insight-title"><span>🧠</span><strong>우선순위는 차트와 흐름도</strong><span>🧠</span></h4><p>평가를 좌우하는 것은 ① 데이터 차트와 ② 판단 흐름도이며, ③ 브랜딩 이미지는 두 가지를 완성한 뒤 선택으로 더함</p></section>
 <aside class="lesson-warning"><div class="warning-title">🚨 <strong>과학기술 포트폴리오의 AI 이미지 사용 원칙</strong></div><ul><li>AI 이미지는 표지·개념도·아이콘·배경 용도로만 사용</li><li>Western blot 밴드, 현미경 사진, 실험 그래프처럼 실험 결과로 오해될 수 있는 이미지는 생성하지 않음</li><li>수치가 들어가는 차트는 내 기록의 수치로 직접 만들고 비교 기준(기간·자료)을 함께 표시하며, 공개할 수 없는 데이터는 수치 없는 도식으로 표현</li><li>연구 데이터를 AI로 만들거나 보정한 것으로 보이면 연구윤리 문제로 이어질 수 있음</li></ul></aside>
 <details class="lesson-toggle"><summary>☑️ [안내] 도구 Imagen → 나노 바나나 2(Nano Banana 2) 안내</summary><div class="toggle-body"><p>교육 안내문의 'Imagen'은 Google의 이전 이미지 생성 모델 이름으로, 현재 Gemini 앱의 이미지 생성은 나노 바나나 2(Nano Banana 2)가 기본 모델임. 오늘 실습은 Gemini 앱의 이미지 생성 기능으로 진행함</p><p class="lesson-note">※ 무료 계정은 하루 이미지 생성 횟수에 제한이 있으므로 표지 배경 1장과 아이콘 세트 1장만 만듦. 메뉴 이름과 제공 범위는 계정·업데이트 시점에 따라 달라질 수 있음</p></div></details>
@@ -120,7 +119,6 @@ Google Slides로 내보내서 편집할 거야.
 
 <h4>② 판단 흐름도 다듬기 (3장)</h4>
 <ol><li><strong>단계명 대조</strong> — Canvas가 만든 흐름도의 단계명·순서를 실습 7 표 2와 대조함</li><li><strong>도형 정리</strong> — 어긋나거나 깨진 도형은 삽입 → 도형, 삽입 → 선(화살표)으로 다시 그림. 4단계라면 같은 크기 사각형 4개와 화살표 3개로 구성함</li><li><strong>판단 근거 넣기</strong> — 단계 아래에 판단 근거를 한 줄씩 작은 글씨로 넣음</li><li><strong>강조 1곳</strong> — 내 판단이 가장 잘 드러나는 단계 하나만 민트로 칠함 (김서연: STEP 3 우선 통제 변수 결정)</li><li><strong>고정하기</strong> — 도형과 글상자를 모두 선택해 그룹으로 묶어 정렬이 흐트러지지 않게 함</li></ol>
-<details class="lesson-toggle"><summary>☑️ [참고] 다른 도구 : Napkin AI (텍스트 → 도식)</summary><div class="toggle-body"><p>Napkin AI는 문장을 붙여넣으면 도식 후보를 만들어 주는 도구로, Slides 도형을 직접 그리기 어려울 때 활용할 수 있음</p><ol><li>표 2의 '단계 · 한 일 · 판단 근거'를 문장으로 붙여넣음</li><li>제안된 도식 중 단계가 순서대로 이어지는 형태를 고름</li><li>색을 네이비·민트로 맞추고 이미지로 내려받아 Slides 3장에 넣음</li></ol><p class="lesson-note">※ 도식 안 글자가 바뀌거나 깨지지 않았는지 표 2와 다시 대조함. 무료 플랜의 제공 범위와 메뉴는 업데이트에 따라 달라질 수 있음</p></div></details>
 
 <h4>③ 브랜딩 이미지 만들기 (선택)</h4>
 <p>나노 바나나는 표지 배경과 아이콘처럼 글자가 없는 이미지에만 씀. 두 이미지를 같은 대화창에서 이어서 만들어야 색과 선 스타일이 맞음</p>

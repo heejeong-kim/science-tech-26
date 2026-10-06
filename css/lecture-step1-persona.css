@@ -15,3 +15,8 @@
 .persona-timeline>span{text-align:center;color:#7ba950;font-size:20px;font-weight:900;line-height:1}
 .persona-closing{margin:22px 0 0!important;padding:16px 18px;border-left:4px solid #8dbf45;background:#f1f7f3;font-weight:700}
 @media(max-width:800px){.persona-body{padding:20px 16px 24px}.persona-lead{font-size:16px}}
+.persona-toggle>summary{display:flex;align-items:center;gap:10px}
+.persona-toggle>summary>strong{flex:0 1 auto;min-width:0}
+.persona-copy{flex:none;margin-left:6px;padding:6px 14px;border:1px solid #d8b96a;border-radius:999px;background:#fff;color:#6b4b10;font-family:inherit;font-size:13px;font-weight:600;cursor:pointer;transition:background .2s,color .2s}
+.persona-copy:hover{background:#6b4b10;color:#fff}
+.persona-copy.copied{background:#174f48;border-color:#174f48;color:#fff}

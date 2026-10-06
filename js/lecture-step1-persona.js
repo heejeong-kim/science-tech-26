@@ -3,7 +3,7 @@ const step1=document.querySelector('#step-1')?.closest('.lesson-view');
 if(!step1||step1.querySelector('.persona-toggle'))return;
 const persona=document.createElement('details');
 persona.className='lesson-toggle persona-toggle';
-persona.innerHTML=`<summary><strong>☑️ [실습 참고🧍🏽‍♀️] 수업용 페르소나 김서연</strong></summary><div class="toggle-body persona-body">
+persona.innerHTML=`<summary><strong>☑️ [실습 참고🧍🏽‍♀️] 수업용 페르소나 김서연</strong><button type="button" class="persona-copy" aria-label="페르소나 김서연 내용 복사">복사</button></summary><div class="toggle-body persona-body">
 <p class="persona-notice">※ 아래 인물·회사·프로젝트는 수업을 위해 구성한 가상 사례로 실제 지원서에서는 본인의 실제 경험과 확인 가능한 결과만 사용</p>
 <p class="persona-lead"><strong>🧍🏽‍♀️김서연 : 바이오·의료 R&amp;D 8년, 경력 공백 없이 연구원에서 선임연구원으로 성장한 사례</strong></p>
 <ul class="persona-profile">
@@ -34,6 +34,26 @@ persona.innerHTML=`<summary><strong>☑️ [실습 참고🧍🏽‍♀️] 수�
 <p class="persona-closing">각 STEP의 수업용 가상 사례인 김서연을 따라가면서 하나의 경력이 어떻게 경력 기술서와 포트폴리오로 발전하는지 확인</p>
 </div>`;
 step1.querySelector('.lesson-goal').after(persona);
+// 페르소나 내용을 일반 텍스트로 복사 (토글이 닫혀 있어도 동작)
+const personaText=()=>{
+  const body=persona.querySelector('.persona-body');const lines=[];
+  body.childNodes.forEach(node=>{
+    if(node.nodeType!==1)return;
+    if(node.matches('ul'))node.querySelectorAll('li').forEach(li=>lines.push('- '+li.textContent.trim()));
+    else if(node.matches('.persona-timeline'))node.querySelectorAll('article').forEach((item,index)=>{if(index)lines.push('↓');lines.push(item.querySelector('strong').textContent.trim());lines.push(item.querySelector('p').textContent.trim())});
+    else if(node.matches('h4'))lines.push('','['+node.textContent.trim()+']');
+    else lines.push(node.textContent.trim());
+  });
+  return lines.join('\n');
+};
+persona.querySelector('.persona-copy').addEventListener('click',async event=>{
+  // 버튼 클릭 시 토글이 열리고 닫히지 않게 막음
+  event.preventDefault();event.stopPropagation();
+  const button=event.currentTarget;const value=personaText();
+  try{await navigator.clipboard.writeText(value)}catch(error){const area=document.createElement('textarea');area.value=value;area.style.position='fixed';area.style.opacity='0';document.body.appendChild(area);area.select();document.execCommand('copy');area.remove()}
+  button.textContent='복사됨';button.classList.add('copied');setTimeout(()=>{button.textContent='복사';button.classList.remove('copied')},1400);
+});
+
 const jdSample=[...step1.querySelectorAll('.sample-toggle')].find(toggle=>toggle.querySelector('summary')?.textContent.includes('김서연의 JD 분해 시트'));
 const jdRows=jdSample?.querySelectorAll('.lesson-table tr');
 if(jdRows?.length>=5){
