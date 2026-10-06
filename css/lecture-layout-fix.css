@@ -5,3 +5,16 @@
 .lesson-view pre{max-width:100%;white-space:pre-wrap;overflow-wrap:anywhere}
 .lesson-view img,.lesson-view iframe,.lesson-view video{max-width:100%;height:auto}
 .lesson-view details,.lesson-view aside,.lesson-view blockquote,.lesson-view section{max-width:100%}
+
+/* STEP 2-1 포트폴리오 샘플 임베드: 제목 좌측 · 새 창/다운로드 버튼 우측 */
+.sample-embed{margin:22px 0 4px;border:1px solid #d5e4df;border-radius:14px;overflow:hidden;background:#fff;box-shadow:0 8px 24px rgba(15,76,69,.06)}
+.sample-embed-bar{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:12px 16px;background:#f7faf8;border-bottom:1px solid #d5e4df}
+.sample-embed-title{display:flex;flex-direction:column;gap:2px;min-width:0;color:#0f4c45}
+.sample-embed-title small{color:#6d7c82;font-size:13px}
+.sample-embed-actions{display:flex;gap:8px;flex-wrap:wrap;margin-left:auto}
+.sample-embed-btn{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border:1px solid #b9d3cb;border-radius:9px;background:#fff;color:#0f4c45;font-size:14px;font-weight:600;text-decoration:none;white-space:nowrap;transition:background .2s,border-color .2s}
+.sample-embed-btn:hover{border-color:#0f766e;background:#edf7f2}
+.sample-embed-btn.is-primary{background:#0f766e;border-color:#0f766e;color:#fff}
+.sample-embed-btn.is-primary:hover{background:#0b5f58}
+.lesson-view .sample-embed .sample-embed-frame{display:block;width:100%;height:min(78vh,820px);min-height:480px;border:0;background:#fff}
+@media (max-width:640px){.sample-embed-actions{width:100%}.sample-embed-btn{flex:1;justify-content:center}.lesson-view .sample-embed .sample-embed-frame{height:70vh;min-height:420px}}

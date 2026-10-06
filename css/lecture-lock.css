@@ -1,0 +1,15 @@
+/* STEP 2 이후 잠금 카드 */
+.lecture-lock{display:grid;justify-items:center;gap:10px;padding:clamp(36px,6vw,64px) clamp(20px,4vw,48px);border:1px dashed #9fbdb5;border-radius:22px;background:linear-gradient(160deg,#f6faf8,#eef6f2);text-align:center}
+.lecture-lock .lock-icon{font-size:40px;line-height:1}
+.lecture-lock h2{margin:6px 0 0;font-size:clamp(22px,2.4vw,28px);color:#0f4c45;letter-spacing:-.03em}
+.lecture-lock p{margin:0;color:#4d605b}
+.lock-form{display:flex;gap:10px;width:min(420px,100%);margin-top:12px}
+.lock-form input{flex:1;min-width:0;height:48px;padding:0 16px;border:1px solid #b9cec7;border-radius:12px;font:inherit;font-size:16px;background:#fff}
+.lock-form input:focus{outline:2px solid #2b8c83;outline-offset:1px}
+.lock-form button{flex:none;height:48px;padding:0 22px;border:0;border-radius:12px;background:#0f4c45;color:#fff;font:inherit;font-weight:700;cursor:pointer}
+.lock-form button:disabled{opacity:.6;cursor:wait}
+.lock-message{min-height:1.5em;font-size:14px}
+.lock-message.is-error{color:#b42318;font-weight:600}
+.lecture-step-nav .step-locked strong{opacity:.85}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+@media(max-width:480px){.lock-form{flex-direction:column}.lock-form button{width:100%}}
