@@ -21,3 +21,27 @@
 .sample-embed-btn.is-primary:hover{background:#0b5f58}
 .lesson-view .sample-embed .sample-embed-frame{display:block;width:100%;height:min(78vh,820px);min-height:480px;border:0;background:#fff}
 @media (max-width:640px){.sample-embed-actions{width:100%}.sample-embed-btn{flex:1;justify-content:center}.lesson-view .sample-embed .sample-embed-frame{height:70vh;min-height:420px}}
+
+/* 교안의 텍스트 링크: 클릭 전에도 링크임을 알아볼 수 있도록 표시 */
+.lesson-view a[href]:not(.sample-embed-btn) {
+  color: #1764a0;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+.lesson-view a[href]:not(.sample-embed-btn):hover {
+  color: #104774;
+  text-decoration-thickness: 2px;
+}
+.lesson-view a[href]:focus-visible {
+  outline: 2px solid #1764a0;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+.lesson-view a[href^="http"]:not(.sample-embed-btn)::after {
+  content: " ↗";
+  display: inline-block;
+  margin-left: 2px;
+  font-size: .85em;
+  text-decoration: none;
+}
