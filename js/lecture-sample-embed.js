@@ -39,6 +39,11 @@ const SAMPLE_HTML=`<div class="sample-embed-list">${SAMPLES.map(card).join('')}<
 
 // 안내 문구가 있는 자리만 찾아 교체함 (이미 바뀌었으면 아무것도 하지 않음)
 const apply=()=>{
+  document.querySelectorAll('.lesson-view summary').forEach(summary=>{
+    if(/과학\s*기술인.*포트폴리오\s*샘플\s*리뷰/.test(summary.textContent)) {
+      summary.parentElement.classList.add('portfolio-sample-review');
+    }
+  });
   document.querySelectorAll('.lesson-placeholder').forEach(el=>{
     if(el.textContent.includes('샘플 추후 삽입'))el.outerHTML=SAMPLE_HTML;
   });

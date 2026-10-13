@@ -45,3 +45,31 @@
   font-size: .85em;
   text-decoration: none;
 }
+
+/* 과학기술인 포트폴리오 샘플 리뷰 강조 */
+.lesson-view .portfolio-sample-review {
+  border: 3px solid #5274c8;
+  background: #edf2ff;
+  box-shadow: 0 6px 20px rgba(45, 76, 145, .12);
+}
+.lesson-view .portfolio-sample-review > summary {
+  background: #254b92;
+  color: #fff;
+}
+.lesson-view .portfolio-sample-review > summary::before {
+  color: #dbe7ff;
+}
+.lesson-view .portfolio-sample-review > .toggle-body {
+  background: #f3f6ff;
+  border-top-color: #c2d0ee;
+}
+.portfolio-sample-review .sample-embed {
+  border-color: #b9c9eb;
+}
+.portfolio-sample-review .sample-embed-bar {
+  background: #e4ecff;
+  border-bottom-color: #b9c9eb;
+}
+.portfolio-sample-review .sample-embed-title { color: #214581; }
+.portfolio-sample-review .sample-embed-title small { color: #4c6086; }
+.portfolio-sample-review .sample-embed-no { background: #315ba6; }
