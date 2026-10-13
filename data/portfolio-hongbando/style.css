@@ -109,3 +109,38 @@ h1{font-weight:600;letter-spacing:-.055em}h1 em{background:linear-gradient(trans
 @media screen and (max-width:760px){.hero-orbit{width:430px;height:430px;top:400px;right:-100px}.process-ribbon{margin-top:24px;padding:10px 0}.process-ribbon>div{font-size:12px;gap:25px}.section-top>span:first-child{font-size:9px;padding:6px 8px}.section-top span:last-child{font-size:10px}.heading-grid h2{padding-left:18px}.support-grid article h3{font-size:27px}.closing{padding:22px}.chip-art{border-radius:18px}}
 @media(prefers-reduced-motion:reduce){.process-ribbon>div{animation:none}.hero-orbit{animation:none}.hero .dot,.die-grid:after{animation:none}}
 @media print{.process-ribbon,.hero-orbit{display:none}.heading-grid h2{padding-left:0}.heading-grid h2:before{display:none}.closing{padding:0;background:none}.support-grid article h3{font-size:21pt}}
+
+.evaluation-details{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:32px}.evaluation-details article{padding:24px;border:1px solid #c7d2cf;border-radius:16px;background:#f7faf8}.evaluation-details h3{font-size:20px;margin:0 0 20px}.evaluation-details dl{display:grid;grid-template-columns:90px minmax(0,1fr);gap:14px;font-size:14px;line-height:1.7}.evaluation-details dt{font-weight:700}.evaluation-details dd{margin:0;overflow-wrap:anywhere}@media(max-width:800px){.evaluation-details{grid-template-columns:1fr}}
+
+/* 결과 섹션의 증거 카드: 어두운 섹션과 일관된 대비 */
+.evaluation-details article{background:#352e34;border-color:#66545c;color:#f7f2ee}
+.evaluation-details h3{color:#f3ae7c}
+.evaluation-details dt{color:#f3c6a5}
+.evaluation-details dd{color:#f1e8e3}
+.evaluation-details .source-note{color:#cdbdb8}
+
+/* 홍반도 통합 팔레트: 코퍼 · 살구 · 웜 차콜 */
+:root{--primary:#b96836;--secondary:#efb184;--navy:#29262a;--muted:#68605d;--mint:#efb184;--line:#e4d8ce;--paper:#faf5ef}
+#intro{background:radial-gradient(ellipse at 90% 10%,#ffc18b38,transparent 46%),#fcf8f2}
+#career{background:radial-gradient(ellipse at 5% 15%,#f1dfd0,transparent 50%),#f7f1eb}
+#process{background:radial-gradient(ellipse at 100% 25%,#f6d6ba,transparent 52%),#fff5eb}
+#projects{background:radial-gradient(ellipse at 5% 70%,#eed8c6,transparent 55%),#f8f1eb}
+#skills{background:radial-gradient(ellipse at 95% 85%,#f0c5a538,transparent 55%),#fcf8f2}
+.hero-orbit{box-shadow:0 0 0 65px #eaa6720a,0 0 0 130px #b9683609}
+.chip-art:before{box-shadow:0 0 0 40px #efb88712,0 0 0 80px #efb1840b,0 0 65px #e5a57725}
+.process-ribbon b{color:var(--secondary)}
+.heading-grid h2:before{background:linear-gradient(#ed9456,#a9623b)}
+.timeline:before,.timeline article,#career .competencies>div,.career-summary{border-color:#dfcdbc}
+.timeline:before{background:#dfcdbc}.timeline-dot{background:#b79d8c}.current .timeline-dot{background:var(--primary)}
+.timeline .duration{background:#f1e7df;color:#715747}.current .duration,.competencies>div>span,.flow-body>span,.project-label{color:#98522d}
+.timeline article:hover{border-color:#c58e66;box-shadow:0 16px 35px #6c452616}
+.card-top span:first-child{background:#f1dfcf;color:#89502d}
+.closing{background:linear-gradient(110deg,#eac9b433,#efdcc933)}
+.results{background:radial-gradient(ellipse at 80% 15%,#80553355,transparent 52%),linear-gradient(130deg,#29262a,#42312c)!important}
+.comparison{border-color:#6c5245}.baseline{background:#947c6e}.improved{background:var(--secondary);color:#29262a}
+.results .section-top,.results .heading-grid p,.results .source-note,.results .small-label,.chart-note,.chart-title span,.metric-stack article>span:last-child{color:#d5c4b8}
+.chart-title{color:#f5e4d7}.metric-stack article{border-bottom-color:#715747}.big-result>span{color:var(--secondary)}
+.evaluation-details article{background:#39302c;border-color:#715747;color:#f7f2ee}
+.evaluation-details h3{color:var(--secondary)}.evaluation-details dt{color:#f3c6a5}.evaluation-details dd{color:#f1e8e3}
+.evaluation-details .source-note{color:#d5c4b8}
+@media print{#career,#projects,#skills{background:#fcf8f2}.results{background:#29262a!important}}

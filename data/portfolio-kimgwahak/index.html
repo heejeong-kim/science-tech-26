@@ -434,6 +434,8 @@ h2.pre .wd{opacity:0;transform:translateY(.6em)}
 .totop:focus-visible{outline:3px solid var(--mint);outline-offset:3px}
 @media (max-width:600px){.totop{width:48px;height:48px}}
 @media print{.totop{display:none!important}}
+
+.sample-bar{display:grid;grid-template-columns:80px minmax(0,1fr) 85px;gap:12px;align-items:center;margin:16px 0;font-size:14px}.sample-bar>div{height:20px;background:#d7e8e1;border-radius:5px;overflow:hidden}.sample-bar i{display:block;height:100%;background:#91aaa0}.sample-bar i.improved{background:#267765}.evidence-detail{margin-top:24px;padding:24px;border:1px solid #b9d3c9;border-radius:16px;background:#ffffffaa}.evidence-detail p{line-height:1.8}.metric{border-style:solid}
 </style>
 </head>
 <body>
@@ -580,7 +582,7 @@ h2.pre .wd{opacity:0;transform:translateY(.6em)}
         <div class="eyebrow rv"><b>3</b>Key Project · Problem &amp; Process</div>
         <h2 class="rv split">면역항암 펩타이드, AI 예측을 Wet&nbsp;Lab 데이터로 검증해 후보를 고르다</h2>
         <p class="msg rv">AI 모델링 자료만으로는 후보를 고를 수 없었기에, <strong>in vitro 평가 기준을 먼저 세우고 실험 데이터로 교차 검증</strong>했습니다.</p>
-        <div class="problem rv"><b><i class="ico" data-icon="ic-problem"></i>PROBLEM</b><p>면역항암 펩타이드 후보물질의 효능을 같은 기준으로 비교할 in vitro 평가 체계가 필요했고, 외부 분석 결과·AI 모델링 자료를 실제 실험 데이터와 맞춰 볼 근거가 있어야 했음</p></div>
+        <div class="problem rv"><b><i class="ico" data-icon="ic-problem"></i>PROBLEM</b><p>면역항암 펩타이드 후보물질의 효능을 같은 기준으로 비교할 in vitro 평가 체계가 필요했고, 외부 분석 결과·AI 모델링 자료를 실제 실험 데이터와 맞춰 볼 근거가 있어야 했음</p></div><div class="problem rv"><b>MY ROLE & TARGET</b><p>평가법 설계와 후보별 실험 결과 분석을 담당했습니다. AI 예측 결과를 실험 데이터로 교차 검증하고, 기준 물질 대비 결합 친화도가 개선된 후보 1종을 선정하는 것이 목표였습니다.</p></div>
       </div>
       <figure class="visual rv" data-visual="v2-process" style="--ar:16/10">
         <figcaption><b>VISUAL 02</b>assets/visual/v2-process.png<br>16:10 · AI 예측과 Wet Lab 검증이 만나는 추상 비주얼</figcaption>
@@ -610,14 +612,12 @@ h2.pre .wd{opacity:0;transform:translateY(.6em)}
     <p class="msg rv">in vitro 평가법 구축과 AI × Wet&nbsp;Lab 비교 분석으로 <strong>결합력이 향상된 후보물질 도출에 기여</strong>했습니다.</p>
     <div class="results">
       <div class="res tilt rv" tabindex="0" data-from="1"><i class="ico lg" data-icon="ic-assay"></i><small>OUTPUT 1<em>← STEP 1</em></small><h3>in vitro 약효평가법 구축</h3><p>면역항암 펩타이드 후보물질을 비교할 평가 기준 확보</p><span class="jdk">JD 연결 · in vitro · cell-based assay</span></div>
-      <div class="res key tilt rv" tabindex="0" data-from="2,3,4"><i class="ico lg" data-icon="ic-candidate"></i><small>OUTPUT 2 · 핵심 성과<em>← STEP 2·3·4</em></small><h3>결합력이 향상된 후보물질 도출에 기여</h3><p>외부 분석·AI 모델링 자료를 Wet Lab 검증 데이터와 비교·분석</p><span class="jdk">JD 연결 · 작용기전 근거 데이터</span></div>
+      <div class="res key tilt rv" tabindex="0" data-from="2,3,4"><i class="ico lg" data-icon="ic-candidate"></i><small>OUTPUT 2 · 핵심 성과<em>← STEP 2·3·4</em></small><h3>결합력이 향상된 후보물질 도출에 기여</h3><p>외부 분석·AI 모델링 자료를 Wet Lab 검증 데이터와 비교·분석</p><span class="jdk">JD 연결 · 후보물질 검증 데이터</span></div>
       <div class="res tilt rv" tabindex="0" data-from="4"><i class="ico lg" data-icon="ic-lead"></i><small>OUTPUT 3<em>← STEP 4</em></small><h3>연구 결과 기반 의사결정 지원</h3><p>프로젝트 개발 방향 판단과 비임상 결과 보고서 작성</p><span class="jdk">JD 연결 · Project Leader</span></div>
     </div>
     <!-- 전후 비교 수치: 원본 기록의 값을 METRIC 에 넣으면 막대·숫자 애니메이션이 켜짐. 비어 있으면 입력 자리로 표시 -->
-    <div class="metric rv" id="metric">
-      <div class="num" id="metric-num">수치 입력 자리</div>
-      <div id="metric-body"><p>결합력 등 전후 비교 수치는 원본 실험 기록으로 확인한 값만 넣음 (비교 기준: 기간·자료 표기)</p></div>
-    </div>
+    <div class="metric rv" id="metric"><div class="num" id="metric-num">120 → 45 nM</div><div id="metric-body"><h3>결합 친화도 · Kd</h3><p>기준 물질 → 최종 후보 · 낮을수록 높은 결합 친화도</p><div class="sample-bar"><span>기준 물질</span><div><i style="width:80%"></i></div><b>120 nM</b></div><div class="sample-bar"><span>최종 후보</span><div><i style="width:30%" class="improved"></i></div><b>45 nM</b></div><p>0–150 nM 동일 척도 · Kd 62.5% 감소</p></div></div>
+    <div class="evidence-detail rv"><h3>동일 조건에서 비교한 평가 근거</h3><p>4주 동안 후보 6종을 기준 물질과 같은 조건으로 비교했습니다. SPR 결합 분석을 독립적으로 3회 반복한 평균 Kd는 기준 물질 120 nM, 최종 후보 45 nM였습니다. 세포 기반 효능평가는 별도로 수행해 후보 선정의 보조 근거로 활용했습니다.</p><p><strong>산출물</strong> · 평가 SOP, SPR 원자료·분석표, AI 예측–실험 비교표, 후보 선정 보고서</p><p><strong>적용 범위</strong> · 연구팀 4명·후속 후보평가 과제 2건에 평가 기준과 비교표를 공유했습니다. 최종 후보 1종을 후속 효능평가 대상으로 제안했습니다.</p><p class="note">결합 친화도 개선은 작용기전 규명의 직접 증거와 구분했습니다.</p></div>
   </div>
 </section>
 
@@ -690,7 +690,7 @@ h2.pre .wd{opacity:0;transform:translateY(.6em)}
       </div>
     </div>
     <div class="foot">
-      <span>※ 모든 내용은 경력 기술서에 기록된 사실만 사용했으며, 기관명·과제명·미공개 물질 정보는 표기하지 않음</span>
+      <span>※ 수업용 포트폴리오 샘플입니다. 3·4번의 세부 목표·수치·평가 자료·적용 범위는 학습용 설정이며 실제 실험 결과가 아닙니다. 기관명·미공개 물질 정보는 표기하지 않았습니다.</span>
       <span>※ CRO 원자료 검토·해외 CMO 관리·기술이전 협업 일부는 신약연구팀 공통 업무로, 특정 프로젝트 연결에서는 제외함</span>
       <span>※ 지원 JD 요약 출처: 2026 공개 채용공고(업테라 바이오 연구원 Project Leader). 지원 시점에 원문 재확인 필요</span>
     </div>
