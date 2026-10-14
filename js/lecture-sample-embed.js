@@ -44,6 +44,20 @@ const apply=()=>{
       summary.parentElement.classList.add('portfolio-sample-review');
     }
   });
+  // 웹뷰 제작 옵션에만 김서연 고도화 사례를 추가함.
+  document.querySelectorAll('.portfolio-webview-option .option-toggle-body').forEach(body=>{
+    if(body.querySelector('.kimseoyeon-webview-toggle'))return;
+    const toggle=document.createElement('details');
+    toggle.className='lesson-toggle sample-toggle kimseoyeon-webview-toggle';
+    const sample={
+      name:'김서연 바이오 R&D 웹뷰 포트폴리오',
+      desc:'슬라이드 초안을 웹뷰로 고도화한 사례 · STAR·데이터 시각화·인터랙션',
+      url:'data/portfolio-kimseoyeon/index.html',
+      zip:'data/portfolio-kimseoyeon.zip'
+    };
+    toggle.innerHTML=`<summary><strong>[실습 참고 🧍🏽‍♀️] 김서연의 웹뷰 포트폴리오</strong></summary><div class="toggle-body"><p>김서연의 슬라이드 초안과 같은 스토리보드·STAR를 웹뷰로 확장한 사례입니다. 흐름도·전후 비교·반복 실험 분포와 인터랙티브 모션을 확인하세요.</p>${card(sample,0)}</div>`;
+    body.appendChild(toggle);
+  });
   document.querySelectorAll('.lesson-placeholder').forEach(el=>{
     if(el.textContent.includes('샘플 추후 삽입'))el.outerHTML=SAMPLE_HTML;
   });
